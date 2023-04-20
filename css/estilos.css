@@ -1,47 +1,177 @@
-#proyectos {
-    padding: 3em;
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
-  .proyecto {
-    display: grid;
-    grid-template-columns: 1fr;
-    border: 1px solid #f1f1f1;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 2em;
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  .proyecto:hover {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-    transform: translateY(-3px);
+  h1, h2, h3 {
+    font-weight: 700;
   }
   
-  .proyecto img {
-    object-fit: cover;
-    height: 250px;
+  img {
+    max-width: 100%;
+    height: auto;
   }
   
-  .proyecto h3 {
-    margin: 1em;
+  a {
+    text-decoration: none;
+    color: #222;
   }
   
-  .proyecto p {
-    margin: 1em;
+  ul {
+    list-style: none;
   }
   
-  .proyecto button {
-    margin: 1em;
-    padding: 0.5em 1em;
+  button {
+    background-color: #222;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    background-color: #0077c2;
-    color: #ffffff;
-    font-size: 1.1em;
+    padding: 8px 16px;
+    font-size: 1rem;
     cursor: pointer;
   }
   
-  .proyecto button:hover {
-    background-color: #005ea8;
+  button:hover {
+    background-color: #444;
+  }
+  
+  /* Estilos de la sección "Sobre mí" */
+  
+  #sobre-mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  #sobre-mi img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 32px;
+  }
+  
+  #sobre-mi h2 {
+    margin-bottom: 16px;
+  }
+  
+  #sobre-mi p {
+    margin-bottom: 32px;
+  }
+  
+  /* Estilos de la sección "Proyectos" */
+  
+  #proyectos {
+    padding: 64px 16px;
+    text-align: center;
+  }
+  
+  #proyectos h2 {
+    margin-bottom: 32px;
+  }
+  
+  .proyecto {
+    margin-bottom: 64px;
+  }
+  
+  .proyecto img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .proyecto h3 {
+    margin-bottom: 16px;
+  }
+  
+  .proyecto p {
+    margin-bottom: 32px;
+  }
+  
+  /* Estilos de la sección "Contacto" */
+  
+  #contacto {
+    padding: 64px 16px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  #contacto h2 {
+    margin-bottom: 32px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    height: 120px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 16px;
+  }
+  
+  /* Estilos del encabezado y pie de página */
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 16px;
+  }
+  
+  header h1 {
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 16px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-weight: 700;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #aaa;
+  }
+  
+  footer {
+    text-align: center;
   }
   

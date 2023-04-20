@@ -1,74 +1,108 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
     <header>
-      <h1>Mi Portafolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <h1 class="logo">Mi Portafolio</h1>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="sobre-mi">
-        <img src="foto-perfil.jpg" alt="Foto de perfil">
-        <div>
-          <h2>¡Hola!</h2>
-          <p>Soy un diseñador UX/UI con experiencia en la creación de interfaces web y móviles intuitivas y atractivas. Siempre busco la forma más efectiva y elegante de comunicar ideas y funcionalidades a través del diseño. Me apasiona el diseño centrado en el usuario y estoy siempre dispuesto a aprender cosas nuevas.</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-12">
+              <img src="img/foto-perfil.jpg" alt="Foto de perfil">
+            </div>
+            <div class="col-6 col-md-12">
+              <h2>¡Hola!</h2>
+              <p>Soy un diseñador UX/UI con experiencia en la creación de interfaces web y móviles intuitivas y atractivas. Siempre busco la forma más efectiva y elegante de comunicar ideas y funcionalidades a través del diseño. Me apasiona el diseño centrado en el usuario y estoy siempre dispuesto a aprender cosas nuevas.</p>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="proyectos">
-        <h2>Mis Proyectos</h2>
-        <div class="proyecto">
-          <img src="proyecto1.jpg" alt="Proyecto 1">
-          <h3>Proyecto 1</h3>
-          <p>Descripción del proyecto 1.</p>
-          <button>Ver más</button>
-        </div>
-        <div class="proyecto">
-          <img src="proyecto2.jpg" alt="Proyecto 2">
-          <h3>Proyecto 2</h3>
-          <p>Descripción del proyecto 2.</p>
-          <button>Ver más</button>
-        </div>
-        <div class="proyecto">
-          <img src="proyecto3.jpg" alt="Proyecto 3">
-          <h3>Proyecto 3</h3>
-          <p>Descripción del proyecto 3.</p>
-          <button>Ver más</button>
+        <div class="container">
+          <h2>Mis Proyectos</h2>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="proyecto">
+                <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Descripción del proyecto 1.</p>
+                <button>Ver más</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="proyecto">
+                <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>Descripción del proyecto 2.</p>
+                <button>Ver más</button>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="proyecto">
+                <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                <h3>Proyecto 3</h3>
+                <p>Descripción del proyecto 3.</p>
+                <button>Ver más</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="contacto">
         <h2>Contacto</h2>
         <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-
-          <button type="submit">Enviar</button>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+          </div>
+      
+          <div class="form-group">
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" name="empresa">
+          </div>
+      
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+          </div>
+      
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit">Enviar</button>
+          </div>
         </form>
       </section>
-    </main>
-
-    <footer>
-      <p>Diseñado y desarrollado por [tu nombre] &copy; 2023</p>
-    </footer>
-  </body>
-</html>
+      
